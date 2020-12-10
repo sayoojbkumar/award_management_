@@ -14,7 +14,7 @@ awards.sql ==> used to ceate DB locally by runnig the file
 ```
 create db manually in postgress using pgAdmin
 
-```sudo -u postgres psql award_management < awards.sql```
+**sudo -u postgres psql award_management < awards.sql**
 
 where award_management is name of DB created manually
 
