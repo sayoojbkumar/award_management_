@@ -1,0 +1,28 @@
+package Gui;
+import java.awt.EventQueue;
+
+import javax.swing.JTextField;
+
+public class Invention {
+	private JTextField txtYearofi;
+	private JTextField txtBudget;
+	private JTextField txtstory;
+	private JTextField txtYearofw;
+	private JTextField txtCategeory;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Registration window = new Registration();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+}

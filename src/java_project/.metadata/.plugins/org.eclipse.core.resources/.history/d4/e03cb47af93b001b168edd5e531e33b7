@@ -1,0 +1,151 @@
+package Gui;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Image;
+import java.awt.Toolkit;
+
+import javax.swing.JTextField;
+import javax.swing.UIManager;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import java.text.DateFormat;
+import java.util.Date;
+import java.awt.event.ActionListener;
+import java.util.Arrays;
+import java.awt.event.ActionEvent;
+import java.awt.Font;
+import javax.swing.JPasswordField;
+import award_m.*;
+
+import net.sourceforge.jdatepicker.*
+
+public class Register {
+
+	private JFrame frame;
+	private JTextField textField;
+    private JPasswordField passwordField;
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Register window = new Register();
+					window.frame.setVisible(true);
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Register() {
+		
+		initialize();
+		
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */ 
+	private void initialize() {
+		
+		frame = new JFrame("Registration");
+		frame.getContentPane().setFont(new Font("Helvetica Neue", Font.BOLD, 14));
+		frame.getContentPane().setBackground(new Color(153, 103, 255));
+		frame.getContentPane().setForeground(Color.BLACK);
+		frame.setBounds(600, 600, 500, 500);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+	   
+        textField = new JTextField();
+		textField.setBounds(167, 89, 238, 27);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JLabel lblfirstname = new JLabel("fname");
+        lblfirstname.setBounds(45, 92, 106, 21);
+		frame.getContentPane().add(lblfirstname);
+		
+		
+        JLabel lbllastname = new JLabel("lname");
+		lbllastname.setBounds(45, 137, 106, 21);
+		frame.getContentPane().add(lbllastname);
+		 
+		textField = new JTextField();
+		textField.setBounds(167, 134, 238, 27);
+		frame.getContentPane().add(textField);
+		
+        JLabel lblstreet = new JLabel("street");
+		lblstreet.setBounds(45, 182, 106, 21);
+		frame.getContentPane().add(lblstreet);
+		 
+		textField = new JTextField();
+		textField.setBounds(167, 179, 238, 27);
+		frame.getContentPane().add(textField);
+		
+        JLabel lblcity = new JLabel("city");
+		lblcity.setBounds(45, 227, 106, 21);
+		frame.getContentPane().add(lblcity);
+		 
+		textField = new JTextField();
+		textField.setBounds(167, 222, 238, 27);
+		frame.getContentPane().add(textField);
+		
+        JLabel lblpin = new JLabel("pin");
+		lblpin.setBounds(45, 272, 106, 21);
+		frame.getContentPane().add(lblpin);
+		
+		textField = new JTextField();
+		textField.setBounds(167, 272, 238, 27);
+		frame.getContentPane().add(textField);
+		
+        JLabel lbldate = new JLabel("date");
+		lbldate.setBounds(45, 317, 106, 21);
+		frame.getContentPane().add(lbldate);
+		
+		/*JFormattedTextField tft2 = new JFormattedTextField(DateFormat.getDateInstance(DateFormat.SHORT));
+	    tft2.setValue(new Date());
+		tft2.setBounds(167, 317, 238, 27);
+		frame.getContentPane().add(tft2);*/
+		UtilDateModel model = new UtilDateModel();
+		JDatePanelImpl datePanel = new JDatePanelImpl(model);
+		JDatePickerImpl datePicker = new JDatePickerImpl(datePanel);
+		
+		
+		
+		
+	    
+		
+		JLabel msgLbl = new JLabel("");
+		msgLbl.setBounds(57, 170, 215, 27);
+		frame.getContentPane().add(msgLbl);
+		
+		JButton btnSubmit = new JButton("Register");
+		btnSubmit.setBounds(284, 400, 117, 34);
+		frame.getContentPane().add(btnSubmit);
+
+		JLabel lblAuthentication = new JLabel("REGISTER",JLabel.CENTER);
+        Font font = new Font("Helvetica Neue", Font.BOLD,16);
+		lblAuthentication.setFont(font);
+        lblAuthentication.setBounds(45, 31, 348, 15);
+		frame.getContentPane().add(lblAuthentication);	
+  	  	frame.setLocationRelativeTo(null);
+  	  	frame.setResizable(false);
+  	  	
+	}
+}
