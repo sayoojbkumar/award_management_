@@ -5,7 +5,6 @@ official repo for java - DBMS project s3
 ## Database
 
 ```
-manual_db.sql ==> manuall query used to create db
 awards.sql ==> used to ceate DB locally by runnig the file
 ```
 
