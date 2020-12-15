@@ -34,13 +34,13 @@ official repo for java - DBMS project s3
      * [Registration.java](./Award_Management/src/Gui/Registration.java)
      * [Winner.java](./Award_Management/src/Gui/Winner.java)
    * [award_m](./Award_Management/src/award_m)
-   * [Database.class](./Award_Management/src/award_m/Database.class)
-   * [Register.java](./Award_Management/src/award_m/Register.java)
-   * [Database.java](./Award_Management/src/award_m/Database.java)
-   * [Vote.java](./Award_Management/src/award_m/Vote.java)
-   * [voting.java](./Award_Management/src/award_m/voting.java)
-   * [winner.java](./Award_Management/src/award_m/winner.java)
-   * [update_winner.java](./Award_Management/src/award_m/update_winner.java)
+      * [Database.class](./Award_Management/src/award_m/Database.class)
+      * [Register.java](./Award_Management/src/award_m/Register.java)
+      * [Database.java](./Award_Management/src/award_m/Database.java)
+      * [Vote.java](./Award_Management/src/award_m/Vote.java)
+      * [voting.java](./Award_Management/src/award_m/voting.java)
+      * [winner.java](./Award_Management/src/award_m/winner.java)
+      * [update_winner.java](./Award_Management/src/award_m/update_winner.java)
 
 
 
