@@ -41,6 +41,14 @@ official repo for java - DBMS project s3
       * [voting.java](./Award_Management/src/award_m/voting.java)
       * [winner.java](./Award_Management/src/award_m/winner.java)
       * [update_winner.java](./Award_Management/src/award_m/update_winner.java)
+      
+      
+### External Library
+```
+r2xml
+
+psql JDBC Driver
+```
 
 
 
