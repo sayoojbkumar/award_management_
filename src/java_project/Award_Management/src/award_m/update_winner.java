@@ -27,17 +27,16 @@ public class update_winner extends voting {
 		stmt.setString(2, this.password);
 		ResultSet rs = stmt.executeQuery();
 		while(rs.next()) {
-			if(rs.getString("username")=="admin") {
-				return false;
-			}
-			else 
+			final String isadmin=rs.getString("username");
+			if(isadmin.equals("admin")); 
 			{
 				String Query1="update inventor set Recieved_Awards=? where id= ?";
 				stmt1 = connection.prepareStatement(Query1);
 				stmt1.setString(1, awards);
 				stmt1.setInt(2, id);
 				System.out.print(stmt1);
-				stmt1.executeQuery();
+				stmt1.execute();
+				return true;
 			}
 		}
 

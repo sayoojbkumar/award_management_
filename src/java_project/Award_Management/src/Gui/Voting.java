@@ -43,7 +43,7 @@ import net.proteanit.sql.DbUtils;
 public class Voting {
 	public PreparedStatement stmt; 
 	protected Connection connection;
-	private JFrame frame;
+	public JFrame frame;
 	private JTextField textField;
 	private JTable table;
 	private JScrollPane scrollPane;
@@ -100,6 +100,8 @@ public class Voting {
 	}
 	private void initialize() {
 		frame = new JFrame();
+		frame.setBounds(600, 600, 800, 400);
+		frame.setTitle("Voting");
 		frame.getContentPane().setBackground(new Color(153, 0, 255));
 		frame.getContentPane().setLayout(null);
 		
@@ -144,6 +146,7 @@ public class Voting {
 				if(!one.vote()) {
 					one.register(txtUsername.getText(),txtPassword.getText(),Integer.parseInt(spinner.getValue().toString()));
 				}
+				JOptionPane.showMessageDialog(frame, "thank you for voting");
 			}
 		});
 		btnVote.setBackground(new Color(0, 204, 0));

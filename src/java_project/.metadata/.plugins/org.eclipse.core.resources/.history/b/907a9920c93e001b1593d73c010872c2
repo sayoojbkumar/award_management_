@@ -1,0 +1,56 @@
+package Gui;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JSpinner;
+import javax.swing.JTextArea;
+import java.awt.event.ActionEvent;
+import java.awt.Color;
+import java.awt.EventQueue;
+import java.awt.Font;
+import award_m.*;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+
+public class main_java {
+	
+	JFrame frame;
+	
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					main_java window = new main_java();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public main_java() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setForeground(Color.RED);
+		frame.setBounds(200, 200, 550, 400);
+	    frame.getContentPane().setFont(new Font("Helvetica Neue", Font.BOLD, 14));
+	    frame.getContentPane().setBackground(new Color(153, 103, 255));
+	    frame.getContentPane().setForeground(Color.BLACK);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Home");
+		frame.getContentPane().setLayout(null);
+		frame.setTitle("IMPERVA Award Management System");
+	}
+
+}

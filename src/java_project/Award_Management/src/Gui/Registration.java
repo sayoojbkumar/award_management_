@@ -244,6 +244,7 @@ public class Registration {
 					JButton button2 = new JButton("Add");
 					button2.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent e) {
+							frame.setVisible(false);
 							one.add_invention(Integer.parseInt(txtYearofi.getText()),Integer.parseInt(txtBudget.getText()),textArea2.getText(),Integer.parseInt(txtYearofw.getText()),cb.getSelectedItem().toString());
 						}
 						});
