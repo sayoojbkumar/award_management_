@@ -2,7 +2,7 @@
 
 official repo for java - DBMS project s3 
 
-## Database
+## Database(Database management project)
 
 ```
 manual_db.sql ==> manuall query used to create db

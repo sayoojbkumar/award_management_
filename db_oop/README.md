@@ -5,8 +5,7 @@ official repo for java - DBMS project s3
 ## Database
 
 ```
-manual_db.sql ==> manuall query used to create db
-awards.sql ==> used to ceate DB locally by runnig the file
+Awards.sql ==> used to ceate DB locally by runnig the file
 ```
 
 ## clone_locally
@@ -14,7 +13,7 @@ awards.sql ==> used to ceate DB locally by runnig the file
 ```
 create db manually in postgress using pgAdmin
 
-`sudo -u postgres psql award_management < awards.sql`
+`sudo -u postgres psql award_management < Awards.sql`
 
 where award_management is name of DB created manually
 
