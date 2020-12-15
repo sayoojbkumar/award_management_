@@ -153,19 +153,19 @@ public class Registration {
 		frame.getContentPane().add(spinner);
 		
 		txtDob = new JTextField();
-		txtDob.setText("DOB");
+		txtDob.setText("2001-10-10");
 		txtDob.setBounds(274, 162, 114, 15);
 		frame.getContentPane().add(txtDob);
 		txtDob.setColumns(10);
 		
 		txtPin = new JTextField();
-		txtPin.setText("pin");
+		txtPin.setText("673307");
 		txtPin.setBounds(274, 130, 114, 19);
 		frame.getContentPane().add(txtPin);
 		txtPin.setColumns(10);
 		
 		txtSalary = new JTextField();
-		txtSalary.setText("salary");
+		txtSalary.setText("50000");
 		txtSalary.setBounds(274, 220, 114, 19);
 		frame.getContentPane().add(txtSalary);
 		txtSalary.setColumns(10);

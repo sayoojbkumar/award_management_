@@ -1,0 +1,10 @@
+package award_m;
+
+import java.sql.PreparedStatement;
+
+public class winner extends Database {
+	public winner() {
+		String Query="select vote_id,count(*) as count from login group by vote_id";
+		PreparedStatement stmt=Query(Query);
+	}
+}

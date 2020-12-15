@@ -1,0 +1,7 @@
+package award_m;
+
+public class winner extends Database {
+	public winner() {
+		String Query="select vote_id,count(*) as count from login group by vote_id";
+	}
+}

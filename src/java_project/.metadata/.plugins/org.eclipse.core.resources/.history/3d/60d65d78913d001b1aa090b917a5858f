@@ -1,0 +1,45 @@
+package award_m;
+
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.Connection;
+
+
+public class voting implements Vote {
+	protected Connection connection;
+	public PreparedStatement stmt; 
+	public String username;
+	public String password;
+	
+	public voting(String username,String password) {
+		this.password=password;
+		this.username=username;
+	}
+
+	@Override
+	public boolean vote() {
+		// TODO Auto-generated method stub
+		try {
+    		Class.forName("org.postgresql.Driver");
+    		connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Award_management", "postgres", "ssbk1830");
+    	} 
+    	catch (Exception e) {
+	         e.printStackTrace();
+	         System.err.println("Database connectivity error !");
+	         System.exit(0);
+	    }
+		try
+		{
+		String Query="select * from login where username=? and password=?";
+		stmt = connection.prepareStatement(Query);
+		stmt.setString(1, this.username);
+		stmt.setString(2, this.password);
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+    } 
+
+}

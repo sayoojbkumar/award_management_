@@ -1,0 +1,5 @@
+package award_m;
+
+public class update_winner extend voting {
+
+}
